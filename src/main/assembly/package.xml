@@ -47,6 +47,11 @@
             </includes>
             <outputDirectory>webapp/WEB-INF</outputDirectory>
         </fileSet>
+
+        <fileSet>
+            <directory>src/main/webapp/WEB-INF/views</directory>
+            <outputDirectory>webapp/WEB-INF/views</outputDirectory>
+        </fileSet>
     </fileSets>
 
     <dependencySets>
