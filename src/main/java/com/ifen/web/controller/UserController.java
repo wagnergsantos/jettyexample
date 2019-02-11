@@ -23,7 +23,7 @@ public class UserController {
     @RequestMapping(value = "/detail", method = RequestMethod.GET)
     public ModelAndView userDetail(int id) {
         ModelAndView mav = new ModelAndView();
-        User user = testDao.getUser(1);
+        User user = testDao.getUser(id);
         log.info(user.getName());
         mav.setViewName("user/Detail");
         mav.addObject("user",user);
